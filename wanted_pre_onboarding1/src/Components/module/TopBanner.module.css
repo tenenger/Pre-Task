@@ -1,0 +1,9 @@
+.TopBanner {
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 1200px) {
+  .TopBanner {
+    height: auto;
+  }
+}

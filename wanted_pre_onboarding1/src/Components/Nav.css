@@ -1,0 +1,348 @@
+.Navbar {
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 0 1px 0 0 rgb(0 0 0 / 10%);
+  z-index: 100;
+  position: fixed;
+}
+.Mainbar {
+  position: relative;
+  max-width: 1060px;
+}
+.Mainbar__main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.Mainbar__main__NavLeft {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.NavLeft__Top {
+  display: flex;
+}
+.NavLeft__Top__menu {
+  margin-top: -2px;
+  margin-right: 15px;
+}
+.NavLeft__Top__menu > img {
+  image-rendering: -webkit-optimize-contrast;
+}
+.NavLeft__Top__logo {
+  display: block;
+}
+.NavLeft__Top__logo > i {
+  font-size: 17px;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-logo_new:before {
+  content: "\e992";
+}
+.Mainbar__main__NavCenter {
+  height: inherit;
+  text-align: center;
+  margin: 0;
+}
+.NavCenter__btn {
+  height: inherit;
+  display: inline-block;
+}
+.NavCenter__btn > a {
+  position: relative;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  padding: 15px;
+  display: inline-block;
+}
+.NavCenter__btn a > em {
+  position: absolute;
+  top: 10px;
+  right: -5px;
+  pointer-events: none;
+  font-style: normal;
+}
+.Mainbar__main__NavCenter li.NavCenter__Homebtn a {
+  padding-left: 20px;
+}
+.Mainbar__main__NavCenter .NavCenter__Homebtn {
+  box-shadow: inset 0 -2px #258bf7;
+}
+.Mainbar__main__NavRight {
+  height: 100%;
+  padding: 10px 0;
+}
+.Mainbar__main__NavRight > ul {
+  height: 100%;
+  margin: 0;
+}
+.Mainbar__main__NavRight > ul li {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.NavRight__Main__Right {
+  display: inline-flex;
+}
+.Mainbar__main__NavRight > ul li .NavRight__searchbtn {
+  position: relative;
+  margin-top: 5px;
+}
+.Mainbar__main__NavRight > ul li > * {
+  height: 100%;
+  padding: 0 5px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+  line-height: 1;
+}
+.Mainbar__main__NavRight > ul li .Main__Alramwrap__alram {
+  position: relative;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.NavRight__Main__Alramwrap > span,
+.NavRight__Main__profilewrap > span {
+  position: absolute;
+  top: -2px;
+  left: 22px;
+  padding: 0 !important;
+}
+.NavRight__Main__Alramwrap > span {
+  top: -4px;
+  left: 24px;
+}
+.Main__Alram__badge:not(:root) {
+  overflow: hidden;
+}
+.Main__Alram__badge {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  background: #36f;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.Mainbar__main__NavRight > ul .NavRight__Main__profilewrap {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 5px;
+}
+.Mainbar__main__NavRight > ul li .NavRight__Main__profile {
+  height: 32px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  vertical-align: top;
+  padding: 0;
+  margin-right: 11px;
+}
+.Mainbar__main__NavRight > ul li .NavRight__Main__profile .avatarBorder {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #e1e2e3;
+  background-color: #fff;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+.Mainbar__main__NavRight > ul .NavRight__Main__Right {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.Mainbar__main__NavRight > ul .NavRight__Main__Right:before {
+  display: block;
+  content: "";
+  width: 1px;
+  height: 10px;
+  background-color: #e1e2e3;
+  margin: auto 10px;
+}
+.Mainbar__main__NavRight > ul li .Main__Right__dashboardbtn {
+  font-size: 13px;
+  color: #666;
+  line-height: 30px;
+  height: 30px;
+  border: 1px solid #e1e2e3;
+  border-radius: 15px;
+  padding: 0 10px;
+  margin-left: 15px;
+  font-weight: 400;
+}
+.Mainbar__main__NavRight > ul li .NavRight__sub__menubtn {
+  margin-right: 10px;
+  padding-left: 10px;
+}
+@media (min-width: 1200px) {
+  .Mainbar {
+    margin: auto;
+    height: 50px;
+    width: 87.72%;
+  }
+  .Mainbar__main__NavCenter .NavCenter__Homebtn {
+    display: none;
+  }
+  .NavRight__Sub {
+    display: none !important;
+  }
+  .NavRight__Main__sub {
+    display: none !important;
+  }
+  .Mainbar__main__NavRight > ul li > * {
+    padding: 0 10px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .Mainbar__main__NavCenter .NavCenter__Homebtn {
+    display: none;
+  }
+  .Mainbar {
+    width: 90%;
+    margin: 0 auto;
+    height: 50px;
+  }
+  .Mainbar__main__NavRight > ul li .NavRight__Main__profile {
+    margin-right: 0;
+  }
+  .Mainbar__main__NavRight > ul li .Main__Right__dashboardbtn {
+    margin: 0;
+  }
+  .NavRight__Main__sub {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .Mainbar {
+    height: 110px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .Mainbar__main__NavCenter .NavCenter__Homebtn {
+    display: none;
+  }
+  .Mainbar__main__NavLeft {
+    padding: 15px 0;
+    height: 60px;
+    width: 100%;
+  }
+  .Mainbar__main__NavCenter li a {
+    padding: 11px 10px 19px;
+    font-size: 13px;
+  }
+  .Mainbar__main__NavCenter li a > em {
+    top: 5px;
+    right: -7px;
+  }
+  .Mainbar__main__NavRight > ul .NavRight__Main__profilewrap {
+    display: none;
+  }
+  .Mainbar__main__NavRight > ul .NavRight__Main__profile {
+    margin-right: 0;
+  }
+  .Mainbar__main__NavRight > ul .NavRight__Main__Right {
+    display: none;
+  }
+  .Mainbar__main__NavRight > ul li .Main__Right__dashboardbtn {
+    margin: 0;
+  }
+  .Mainbar__main__NavRight > ul li .NavRight__sub__menubtn {
+    margin-right: 0;
+  }
+  .Mainbar__main__NavRight > ul li .NavRight__searchbtn {
+    margin: 0;
+  }
+  .Mainbar__main__NavRight > ul li .Main__Alramwrap__alram {
+    margin: 0;
+  }
+}
+@media (max-width: 767px) {
+  .Mainbar {
+    height: 110px;
+  }
+  .Mainbar__main__NavLeft {
+    height: 60px;
+    width: 100%;
+    padding: 15px 20px;
+  }
+  .Mainbar__main__NavCenter {
+    text-align: left;
+  }
+  .Mainbar__main__NavCenter li a {
+    padding: 11px 10px 19px;
+  }
+  .Mainbar__main__NavCenter .smMoreVisible {
+    display: none;
+  }
+  .Mainbar__main__NavRight > ul .NavRight__Main__profilewrap {
+    display: none;
+  }
+  .Mainbar__main__NavRight > ul .NavRight__Main__profile {
+    margin-right: 0;
+  }
+  .Mainbar__main__NavRight > ul .NavRight__Main__Right {
+    display: none;
+  }
+  .Mainbar__main__NavRight > ul li .Main__Right__dashboardbtn {
+    margin: 0;
+  }
+}
+
+/* font  */
+@font-face {
+  font-family: "icomoon";
+  src: url("https://d1azc1qln24ryf.cloudfront.net/78252/wantedicon/icomoon.eot?8et930");
+  src: url("https://d1azc1qln24ryf.cloudfront.net/78252/wantedicon/icomoon.eot?8et930#iefix")
+      format("embedded-opentype"),
+    url("https://d1azc1qln24ryf.cloudfront.net/78252/wantedicon/icomoon.woff2?8et930")
+      format("woff2"),
+    url("https://d1azc1qln24ryf.cloudfront.net/78252/wantedicon/icomoon.ttf?8et930")
+      format("truetype"),
+    url("https://d1azc1qln24ryf.cloudfront.net/78252/wantedicon/icomoon.woff?8et930")
+      format("woff"),
+    url("https://d1azc1qln24ryf.cloudfront.net/78252/wantedicon/icomoon.svg?8et930#icomoon")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}

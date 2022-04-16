@@ -1,0 +1,8 @@
+.Images {
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+}
+.slick-active .Image {
+  -webkit-filter: brightness(100%);
+  filter: brightness(100%);
+}

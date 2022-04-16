@@ -1,0 +1,15 @@
+.Information {
+}
+@media (min-width: 1200px) {
+  .Information {
+    position: absolute;
+    bottom: 28px;
+    width: 330px;
+    height: 146px;
+    border-radius: 4px;
+    background-color: #fff;
+    opacity: 0;
+    text-align: left;
+    left: 34px;
+  }
+}

@@ -1,0 +1,207 @@
+.mainbanner {
+  width: 100%;
+  display: inline-block;
+}
+.Images {
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+}
+.slick-active .Images {
+  -webkit-filter: brightness(100%);
+  filter: brightness(100%);
+}
+.slick-slider .slick-slide {
+  position: relative;
+}
+.Images__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+.slick-slider .slick-slide > div > div > div > a > img {
+  display: inline-block;
+}
+.Informations {
+  text-align: center;
+}
+.Informations > h2 {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  color: #333;
+  width: "auto";
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.Informations > h3 {
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.15;
+  color: #666;
+  width: "auto";
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.divider {
+  display: none;
+  height: 1px;
+  margin: 0;
+  border: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  background-color: #ececec;
+}
+.Informations__btn {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  color: #36f;
+  height: 40px;
+  padding: 6px 8px;
+  position: relative;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  vertical-align: middle;
+  min-width: 64px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+.Informations__btn__label {
+  width: 100%;
+  font-size: inherit;
+  font-weight: inherit;
+  display: inherit;
+  -webkit-align-items: inherit;
+  -ms-flex-align: inherit;
+  align-items: inherit;
+  -webkit-justify-content: inherit;
+  -ms-flex-pack: inherit;
+  justify-content: inherit;
+  color: inherit;
+}
+.Informations__label__endIcon {
+  margin-top: -2px;
+  margin-right: -1px;
+  margin-left: 2px;
+}
+.slick-slider .slick-slide > div {
+  margin: 20px 10px;
+}
+.slick-prev {
+  left: calc((100% - 1210px) / 2);
+  z-index: 10;
+}
+.slick-next {
+  right: calc((100% - 1200px) / 2);
+}
+.slick-prev:before,
+.slick-next:before {
+  content: "";
+}
+.slick-arrow {
+  width: 30px;
+  height: 60px;
+  opacity: 0.5;
+  border-radius: 15px;
+  background-color: #fff;
+}
+.slick-arrow:hover {
+  background-color: initial;
+}
+@media (min-width: 1200px) {
+  .slick-slide {
+    width: 1060px;
+    padding: 0 12px;
+    box-sizing: content-box;
+  }
+  .slick-active .Informations {
+    -webkit-animation: Information_in__LsISw 0.4s ease-in-out;
+    animation: Information_in__LsISw 0.4s ease-in-out;
+    opacity: 1;
+  }
+  .Informations {
+    position: absolute;
+    bottom: 28px;
+    width: 330px;
+    height: 146px;
+    border-radius: 4px;
+    background-color: #fff;
+    opacity: 0;
+    text-align: left;
+    left: 34px;
+  }
+  .Informations > h2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .Informations > h3 {
+    margin: 0 20px;
+    height: 44px;
+    font-size: 14px;
+    line-height: 1.64;
+    color: #333;
+  }
+  .divider {
+    display: block;
+  }
+  .Informations__btn {
+    margin: 6px 0 0 13px;
+  }
+  .slick-slider .slick-slide > div {
+    margin: 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .slick-slide {
+    width: 1000px;
+  }
+  .Images {
+    height: 183px;
+    border-radius: 3px 3px 0 0;
+  }
+  .Images > a {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .slick-slide {
+    width: 700px;
+  }
+}
+@media (max-width: 767px) {
+  .slick-slide {
+    width: 500px;
+  }
+}
+@media (max-width: 400px) {
+  .slick-slide {
+    width: 200px;
+  }
+}
